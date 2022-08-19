@@ -1,0 +1,150 @@
+# con-1ie-01-01
+console swm-1ie-01-01.ssf1	{ include con-1ie-01-01.ssf1; port 29; } # verified 2020-09-11
+
+# con-1ie-02-01
+console con-1ie-01-01.ssf1	{ include con-1ie-02-01.ssf1; port 02; } # verified 2020-09-11
+console ups-1ie-01-01.ssf1	{ include con-1ie-02-01.ssf1; port 04; } # no response
+console pdu-1ie-01-01.ssf1	{ include con-1ie-02-01.ssf1; port 06; } # no response
+console ups-1ie-01-02.ssf1	{ include con-1ie-02-01.ssf1; port 08; } # no response
+console pdu-1ie-01-02.ssf1	{ include con-1ie-02-01.ssf1; port 10; } # no response
+
+console con-1ie-03-01.ssf1	{ include con-1ie-02-01.ssf1; port 12; } # verified 2020-09-11
+console ups-1ie-03-01.ssf1	{ include con-1ie-02-01.ssf1; port 14; } # no response
+console pdu-1ie-03-01.ssf1	{ include con-1ie-02-01.ssf1; port 16; } # no response
+console ups-1ie-03-02.ssf1	{ include con-1ie-02-01.ssf1; port 18; } # no response
+console pdu-1ie-03-02.ssf1	{ include con-1ie-02-01.ssf1; port 20; } # no response
+
+console swa-1ie-02-10.ssf1	{ include con-1ie-02-01.ssf1; port 09; } # verified 2020-09-11
+console swa-1ie-02-01.ssf1	{ include con-1ie-02-01.ssf1; port 11; } # verified 2020-09-11
+console swa-1ie-02-02.ssf1	{ include con-1ie-02-01.ssf1; port 13; } # verified 2020-09-11
+console swa-1ie-02-03.ssf1	{ include con-1ie-02-01.ssf1; port 15; } # verified 2020-09-11
+console swa-1ie-02-04.ssf1	{ include con-1ie-02-01.ssf1; port 17; } # verified 2020-09-11
+console swa-1ie-02-05.ssf1	{ include con-1ie-02-01.ssf1; port 19; } # verified 2020-09-11
+console swa-1ie-02-06.ssf1	{ include con-1ie-02-01.ssf1; port 21; } # verified 2020-09-11
+console swa-1ie-02-07.ssf1	{ include con-1ie-02-01.ssf1; port 23; } # verified 2020-09-11
+console swa-1ie-02-08.ssf1	{ include con-1ie-02-01.ssf1; port 25; } # verified 2020-09-11
+console swm-1ie-02-01.ssf1	{ include con-1ie-02-01.ssf1; port 29; } # verified 2020-09-11
+
+# con-1ie-03-01
+console swa-1ie-03-01.ssf1	{ include con-1ie-03-01.ssf1; port 11; } # verified 2020-09-11
+console swa-1ie-03-02.ssf1	{ include con-1ie-03-01.ssf1; port 13; } # verified 2020-09-11
+console swa-1ie-03-03.ssf1	{ include con-1ie-03-01.ssf1; port 15; } # verified 2020-09-11
+console swa-1ie-03-04.ssf1	{ include con-1ie-03-01.ssf1; port 17; } # verified 2020-09-11
+console swa-1ie-03-05.ssf1	{ include con-1ie-03-01.ssf1; port 19; } # verified 2020-09-11
+console swa-1ie-03-08.ssf1	{ include con-1ie-03-01.ssf1; port 23; } # verified 2020-09-14 (new switch in SSF1.  From PHX)
+console sec-1ie-03-01.ssf1	{ include con-1ie-03-01.ssf1; port 25; } # verified 2020-09-13 (temporary)
+console swm-1ie-03-01.ssf1	{ include con-1ie-03-01.ssf1; port 29; } # verified 2020-09-11
+console swa-1ie-03-09.ssf1	{ include con-1ie-03-01.ssf1; port 31; } # verified 2020-09-14 (new switch in SSF1.  From PHX)
+
+# con-2md-01-01
+console swa-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 1; }
+console swa-2md-01-02.ssf1	{ include con-2md-01-01.ssf1; port 3; }
+console swa-2md-01-03.ssf1	{ include con-2md-01-01.ssf1; port 5; }
+console swa-2md-01-04.ssf1	{ include con-2md-01-01.ssf1; port 7; }
+console swa-2md-01-05.ssf1	{ include con-2md-01-01.ssf1; port 9; }
+console swm-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 11; }
+console swa-2md-01-06.ssf1	{ include con-2md-01-01.ssf1; port 13; } 
+console swe-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 15; }
+console swc-2md-01-02.ssf1	{ include con-2md-01-01.ssf1; port 17; }
+console swc-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 18; }
+console wlc-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 19; }
+console fw4103.ssf1		{ include con-2md-01-01.ssf1; port 22; aliases fw4103; }
+console fw-2md-01-01.ssf1	{ include con-2md-01-01.ssf1; port 23; } # verified 2021-06-11
+
+# con-2md-02-01
+console swa-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 1; } # verified 2021-06-07
+console swa-2md-02-02.ssf1	{ include con-2md-02-01.ssf1; port 3; } # verified 2021-06-07
+#rsvd: console swa-2md-02-03.ssf1	{ include con-2md-02-01.ssf1; port 5; }
+#rsvd: console swa-2md-02-04.ssf1	{ include con-2md-02-01.ssf1; port 7; }
+#rsvd: console swa-2md-02-05.ssf1	{ include con-2md-02-01.ssf1; port 9; }
+console swm-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 11; } # verified 2021-06-07
+#rsvd: console swa-2md-02-06.ssf1	{ include con-2md-02-01.ssf1; port 13; }
+console swe-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 15; } # verified 2021-06-07
+console swc-2md-02-02.ssf1	{ include con-2md-02-01.ssf1; port 17; } # 
+console swc-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 18; } # verified 2021-06-07
+console wlc-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 19; } # verified 2021-06-07
+console swa-2md-02-10.ssf1	{ include con-2md-02-01.ssf1; port 21; } # verified 2021-06-07
+console fw4104.ssf1		{ include con-2md-02-01.ssf1; port 22; aliases fw4104; }
+console fw-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 23; } # verified 2021-06-11
+#console sec-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 23; (Exist?) - port 26 in conserver.cf; nothing connected; }
+#console pdu-2iw-02-01.ssf1	{ include con-2md-02-01.ssf1; port 27; (Exist?) - not connected now; no adapter; }
+#console pdu-2iw-02-01.ssf1	{ include con-2md-02-01.ssf1; port 28; (Exist?) - not connected now; no adapter; }
+console con-1ie-02-01.ssf1	{ include con-2md-02-01.ssf1; port 29; } # verified 2021-06-07
+console con-2iw-02-01.ssf1	{ include con-2md-02-01.ssf1; port 30; } # verified 2021-06-07
+console con-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 31; } # verified 2021-06-07
+console con-2md-03-01.ssf1	{ include con-2md-02-01.ssf1; port 32; } # verified 2021-06-07
+
+# console swa-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 1; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swa-2md-01-02.ssf1	{ include con-2md-02-01.ssf1; port 3; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swa-2md-01-03.ssf1	{ include con-2md-02-01.ssf1; port 5; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swa-2md-01-04.ssf1	{ include con-2md-02-01.ssf1; port 7; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swa-2md-01-05.ssf1	{ include con-2md-02-01.ssf1; port 9; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swa-2md-01-06.ssf1	{ include con-2md-02-01.ssf1; port 11; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console swm-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 11; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+
+# console swc-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 17; } # verified 2020-09-11
+# console con122.ssf1		{ include con-2md-02-01.ssf1; port 27; } # no response.  Believed to be disconnected
+# console arsw211.ssf1		{ include con-2md-02-01.ssf1; port 4; } # verified 2020-09-11
+# console filer-thp-01.ssf1	{ include con-2md-02-01.ssf1; port 6; } # verified 2020-09-11
+# console fw212.ssf1		{ include con-2md-02-01.ssf1; port 8; } # verified 2020-09-11
+# console swe-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 12; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console arsw221.ssf1		{ include con-2md-02-01.ssf1; port 16; } # verified 2020-09-11
+# console filer-thp-02.ssf1	{ include con-2md-02-01.ssf1; port 18; } # verified 2020-09-11
+# console fw222.ssf1		{ include con-2md-02-01.ssf1; port 20; } # verified 2020-09-11
+# console wlc-2md-01-01.ssf1	{ include con-2md-02-01.ssf1; port 22; } # verified 2020-09-11 # Temporary until we get console in Rack 1
+# console sec-2md-02-01.ssf1	{ include con-2md-02-01.ssf1; port 26; } # verified 2020-09-13 (temporary)
+# #console pdu-2iw-02-01.ssf1	{ include con-2md-02-01.ssf1; port ?; }
+# #console pdu-2iw-02-02.ssf1	{ include con-2md-02-01.ssf1; port ?; }
+
+# con-2md-03-01
+console fwo-2md-03-01.ssf1	{ include con-2md-03-01.ssf1; port 1; } # verified 2020-09-11
+console nastore01-01.ssf1	{ include con-2md-03-01.ssf1; port 3; } # 
+console nastore01-02.ssf1	{ include con-2md-03-01.ssf1; port 5; } # 
+#console thp-pg1.ssf1		{ include con-2md-03-01.ssf1; port 7; } # 
+#console thp-pg2.ssf1		{ include con-2md-03-01.ssf1; port 9; } # 
+console swm-2md-03-01.ssf1	{ include con-2md-03-01.ssf1; port 25; } # verified 2020-09-11
+console swt-2md-03-01.ssf1	{ include con-2md-03-01.ssf1; port 27; } # verified 2020-09-11
+console swt-2md-03-02.ssf1	{ include con-2md-03-01.ssf1; port 23; } # verified 2020-09-11
+console con-2md-02-01.ssf1	{ include con-2md-03-01.ssf1; port 29; } # verified 2020-09-11
+
+# con-2iw-01-01
+console swa-2iw-01-01.ssf1	{ include con-2iw-01-01.ssf1; port 5; } # verified 2020-09-11
+console swa-2iw-01-02.ssf1	{ include con-2iw-01-01.ssf1; port 6; } # verified 2020-09-11
+console swa-2iw-01-03.ssf1	{ include con-2iw-01-01.ssf1; port 7; } # verified 2020-09-11
+console swa-2iw-01-04.ssf1	{ include con-2iw-01-01.ssf1; port 8; } # verified 2020-09-11
+console swa-2iw-01-05.ssf1	{ include con-2iw-01-01.ssf1; port 9; } # verified 2020-09-11
+console swa-2iw-01-06.ssf1	{ include con-2iw-01-01.ssf1; port 10; } # no response
+console swa-2iw-01-07.ssf1	{ include con-2iw-01-01.ssf1; port 11; } # no response
+console swa-2iw-01-08.ssf1	{ include con-2iw-01-01.ssf1; port 12; } # no response
+console swa-2iw-01-09.ssf1	{ include con-2iw-01-01.ssf1; port 13; } # no response
+console swm-2iw-01-01.ssf1	{ include con-2iw-01-01.ssf1; port 26; } # verified 2020-09-11
+
+# con-2iw-02-01
+console ups-2iw-01-01.ssf1	{ include con-2iw-02-01.ssf1; port 1; } # no response
+console pdu-2iw-01-01.ssf1	{ include con-2iw-02-01.ssf1; port 2; } # no response
+console ups-2iw-01-02.ssf1	{ include con-2iw-02-01.ssf1; port 3; } # no response
+console pdu-2iw-01-02.ssf1	{ include con-2iw-02-01.ssf1; port 4; } # no response
+console swa-2iw-02-01.ssf1	{ include con-2iw-02-01.ssf1; port 21; } # verified 2020-09-11
+console swa-2iw-02-02.ssf1	{ include con-2iw-02-01.ssf1; port 22; } # verified 2020-09-11
+console swa-2iw-02-03.ssf1	{ include con-2iw-02-01.ssf1; port 23; } # verified 2020-09-11
+console swa-2iw-02-04.ssf1	{ include con-2iw-02-01.ssf1; port 24; } # verified 2020-09-11
+console swa-2iw-02-05.ssf1	{ include con-2iw-02-01.ssf1; port 25; } # no reponse
+console swa-2iw-02-06.ssf1	{ include con-2iw-02-01.ssf1; port 26; } # no reponse
+console swa-2iw-02-07.ssf1	{ include con-2iw-02-01.ssf1; port 27; } # no reponse
+console swa-2iw-02-08.ssf1	{ include con-2iw-02-01.ssf1; port 28; } # no reponse
+console swa-2iw-02-09.ssf1	{ include con-2iw-02-01.ssf1; port 29; } # no reponse
+console swm-2iw-02-01.ssf1	{ include con-2iw-02-01.ssf1; port 30; } # verified device from ssf conserver
+console con-2iw-03-01.ssf1	{ include con-2iw-02-01.ssf1; port 31; } # verified 2020-09-11
+console con-2iw-01-01.ssf1	{ include con-2iw-02-01.ssf1; port 32; } # verified 2020-09-11
+
+# con-2iw-03-01
+console swm-2iw-03-01.ssf1	{ include con-2iw-03-01.ssf1; port 1; }  # verified 2021-06-10
+
+console srv4305.ssf1		{ include con-2iw-03-01.ssf1; port 17; } # verified 2021-06-10
+console srv4302.ssf1		{ include con-2iw-03-01.ssf1; port 18; } # verified 2021-06-10
+console srv4212.ssf1		{ include con-2iw-03-01.ssf1; port 19; } # verified 2021-06-10
+console srv4304.ssf1		{ include con-2iw-03-01.ssf1; port 20; } # verified 2021-06-10
+console srv4308.ssf1		{ include con-2iw-03-01.ssf1; port 21; } # verified 2021-06-10
+
+console swt-2iw-03-01.ssf1	{ include con-2iw-03-01.ssf1; port 27; }  # verified 2021-06-10
+console swt-2iw-03-02.ssf1	{ include con-2iw-03-01.ssf1; port 25; }  # verified 2021-06-10
