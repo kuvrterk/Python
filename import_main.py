@@ -322,18 +322,3 @@ if __name__ == '__main__':
     #csv_file = input("Enter the CSV file: \n")
     main(csv_file, out_csv) 
 
-#code that prints out indivudal cells in the csv
-  # for row in csv_file_reader:
-        #print(row[0])
-    #    for col in row:
-    #        print(col)
-        #print("row #" + str(csv_file_reader.line_num) + " " + str(row))
-
-"""
-open up a txt file for current active list on https://github.com/23andme-private/is-ops/tree/master/svc/rancid/thp1/switches/configs
-parscent it that way it's only swa-1ie-02-01, on each line. this would help use determine if it's active or not.
-The main purpose of this function is to find if the device is active or not.
-Argument is the list and name of the device (string)
-output is the status of device.
-File would be "active_junpiter.txt"
-"""
